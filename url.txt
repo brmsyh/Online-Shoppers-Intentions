@@ -1,0 +1,4 @@
+- URL Dataset: https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset
+
+- URL Huggingface: https://huggingface.co/spaces/yunidobaheramsyah/online-shoppers-intention-deployment
+
