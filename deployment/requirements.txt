@@ -1,7 +1,3 @@
+altair
 pandas
-numpy
-plotly
-matplotlib
-seaborn
 streamlit
-scikit-learn
