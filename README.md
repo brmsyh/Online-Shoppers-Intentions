@@ -1,58 +1,60 @@
-# Online Shoppers Purchase Prediction Web App
+# **Online Shoppers Purchase Prediction Web App**
 
 ## Repository Outline
-Berikut adalah struktur file dalam repository ini:
+The file structure of this repository is as follows:
 
-1. **README.md**                    - Penjelasan gambaran umum project
-2. **app.py**                       - Aplikasi Streamlit untuk EDA dan prediksi
-3. **requirements.txt**             - Daftar dependencies Python yang digunakan
-4. **best_model_dtc.pkl**           - Model Decision Tree terbaik yang telah dilatih
-5. **online_shoppers_intention.csv** - Dataset utama dalam format CSV
+1. **README.md**                    - Overview of the project
+2. **Notebooks**                   - Jupyter notebooks for EDA and model training
+3. **Model Inference**              - Scripts for model inference and prediction
+4. **app.py**                       - Streamlit application for EDA and prediction
+5. **requirements.txt**             - List of Python dependencies used
+6. **best_model_dtc.pkl**           - Best-trained Decision Tree model
+7. **online_shoppers_intention.csv** - Main dataset in CSV format
 
 ## Problem Background
-Pada bisnis e-commerce, tingkat kunjungan website yang tinggi tidak selalu berbanding lurus dengan angka penjualan. Banyak pengunjung yang hanya menjelajah tanpa melakukan pembelian. Oleh karena itu, perusahaan perlu memahami karakteristik dan perilaku pengguna yang berpotensi melakukan transaksi. Proyek ini bertujuan untuk membangun model prediktif berbasis data perilaku pengguna yang dapat digunakan untuk memprediksi kemungkinan pembelian secara real-time.
+In e-commerce businesses, a high website visit rate does not always correlate with sales figures. Many visitors browse without making a purchase. Therefore, companies need to understand the characteristics and behaviors of users who are likely to make transactions. This project aims to build a predictive model based on user behavior data that can be used to predict the likelihood of purchase in real-time.
 
 ## Project Output
-Output dari proyek ini berupa sebuah aplikasi web berbasis Streamlit yang terdiri dari dua bagian utama:
+The output of this project is a Streamlit-based web application consisting of two main parts:
 
-- Exploratory Data Analysis (EDA) untuk menggali insight dari perilaku pengguna.
+- Exploratory Data Analysis (EDA) to gain insights from user behavior.
 
-- Halaman Prediksi untuk memprediksi kemungkinan pembelian dari input pengguna berdasarkan model machine learning yang telah dilatih.`
+- Prediction Page to predict the likelihood of purchase from user input based on the trained machine learning model.
 
 ## Data
-Dataset yang digunakan adalah Online Shoppers Intention Dataset dari UCI Machine Learning Repository. 
+The dataset used is the Online Shoppers Intention Dataset from the UCI Machine Learning Repository.
 
-Dataset ini memiliki:
+This dataset has:
 
-- Jumlah baris: 12.330 observasi
+- Number of rows: 12,330 observations
 
-- Jumlah kolom: 18 fitur + 1 target (Revenue)
+- Number of columns: 18 features + 1 target (Revenue)
 
-- Tipe data: kombinasi numerik dan kategorikal
+- Data types: combination of numerical and categorical
 
-- Target: Revenue (Boolean), apakah pengunjung melakukan pembelian atau tidak
+- Target: Revenue (Boolean), whether the visitor made a purchase or not
 
-- Sebelum masuk ke pelatihan model, tipe data kolom target (Revenue) sudah diubah ke tipe data integer
+- Before entering model training, the target column (Revenue) data type has been changed to integer
 
-- Terdapat imbalance pada kelas target (Revenue = 15% True)
+- There is an imbalance in the target class (Revenue = 15% True)
 
 ## Method
-Proyek ini menggunakan pendekatan supervised learning untuk menyelesaikan masalah klasifikasi. Beberapa model diuji, seperti KNN, SVM, Random Forest, dan Gradient Boosting. Hasil evaluasi menunjukkan bahwa Decision Tree Classifier memiliki F1 Score tertinggi dan paling stabil untuk baseline model, dan dipilih sebagai model terbaik. Model dilatih menggunakan pipeline Scikit-Learn dan disimpan dalam format `.pkl` menggunakan pickle.
+This project uses a supervised learning approach to solve the classification problem. Several models were tested, such as KNN, SVM, Random Forest, and Gradient Boosting. Evaluation results show that the Decision Tree Classifier has the highest and most stable F1 Score for the baseline model, and is chosen as the best model. The model is trained using the Scikit-Learn pipeline and saved in `.pkl` format using pickle.
 
 ## Stacks
-Berikut adalah teknologi dan tools yang digunakan dalam proyek ini:
+Here are the technologies and tools used in this project:
 
-- Bahasa Pemrograman: Python
+- Programming Language: Python
 
     - Libraries:
 
-        - `scikit-learn` (untuk modeling)
+        - `scikit-learn` (for modeling)
 
-        - `pandas`, `numpy` (untuk manipulasi data)
+        - `pandas`, `numpy` (for data manipulation)
 
-        - `matplotlib`, `seaborn` (untuk visualisasi)
+        - `matplotlib`, `seaborn` (for visualization)
 
-        - `streamlit` (untuk pembuatan web apps)
+        - `streamlit` (for building web apps)
 
         - Platform Deployment: Hugging Face Spaces
 
@@ -60,11 +62,11 @@ Berikut adalah teknologi dan tools yang digunakan dalam proyek ini:
 - [UCI Machine Learning Repository – Online Shoppers Intention Dataset](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset)
 - [Geeks for Geeks](https://www.geeksforgeeks.org/python/python-program-to-convert-camel-case-string-to-snake-case/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
-- [Huggingface](https://huggingface.co/spaces/yunidobaheramsyah/online-shoppers-intention-deployment)
+- [Huggingface](https://huggingface.co/spaces/yunidobaheramsyah/online-shoppers-intention)
 
 ---
 
-**Referensi tambahan:**
+**Additional References:**
 - [Basic Writing and Syntax on Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - [Contoh readme](https://github.com/fahmimnalfrzki/Swift-XRT-Automation)
 - [Another example](https://github.com/sanggusti/final_bangkit) (**Must read**)
