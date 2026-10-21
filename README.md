@@ -119,8 +119,8 @@ Gradient Boosting was tuned (best CV PR-AUC 0.742) and the decision threshold mo
 ## 6. How to run
 
 ```bash
-git clone https://github.com/brmsyh/brazil-ecommerce-purchase-intent.git
-cd brazil-ecommerce-purchase-intent
+git clone https://github.com/brmsyh/online-purchase-intent.git
+cd online-purchase-intent
 pip install -r requirements.txt
 
 python src/generate_raw_data.py      # optional: regenerate the raw data
