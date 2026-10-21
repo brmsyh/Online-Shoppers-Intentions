@@ -1,0 +1,101 @@
+{
+  "model": "HistGradientBoostingClassifier (tuned)",
+  "threshold": 0.684,
+  "features": {
+    "numeric": [
+      "pages_viewed",
+      "category_pages",
+      "product_pages",
+      "searches",
+      "session_duration_sec",
+      "product_page_duration_sec",
+      "add_to_cart_count",
+      "wishlist_adds",
+      "cart_value_brl",
+      "bounce_rate",
+      "exit_rate",
+      "page_value_brl",
+      "hour",
+      "month"
+    ],
+    "binary": [
+      "viewed_freight_calculator",
+      "viewed_installment_options",
+      "coupon_applied",
+      "is_weekend"
+    ],
+    "categorical": [
+      "device_type",
+      "traffic_source",
+      "visitor_type",
+      "region",
+      "sales_event"
+    ]
+  },
+  "categories": {
+    "device_type": [
+      "Desktop",
+      "Mobile",
+      "Tablet",
+      "Unknown"
+    ],
+    "traffic_source": [
+      "Afiliados",
+      "Direto",
+      "E-mail",
+      "Facebook",
+      "Google Ads",
+      "Google Org\u00e2nico",
+      "Instagram",
+      "TikTok",
+      "Unknown",
+      "WhatsApp"
+    ],
+    "visitor_type": [
+      "New",
+      "Returning",
+      "Unknown"
+    ],
+    "region": [
+      "Centro-Oeste",
+      "Nordeste",
+      "Norte",
+      "Sudeste",
+      "Sul",
+      "Unknown"
+    ],
+    "sales_event": [
+      "Black Friday",
+      "Carnaval",
+      "Dia das M\u00e3es",
+      "Dia dos Namorados",
+      "Natal",
+      "Regular day",
+      "Semana do Consumidor"
+    ]
+  },
+  "test_metrics": {
+    "f1": 0.6695,
+    "precision": 0.6346,
+    "recall": 0.7086,
+    "accuracy": 0.8791,
+    "pr_auc": 0.7504,
+    "roc_auc": 0.9064
+  },
+  "cumulative_gains": {
+    "top_10pct": 0.4736,
+    "top_20pct": 0.7213,
+    "top_30pct": 0.8324
+  },
+  "best_params": {
+    "min_samples_leaf": 150,
+    "max_leaf_nodes": 7,
+    "max_iter": 600,
+    "max_features": 0.7,
+    "learning_rate": 0.03,
+    "l2_regularization": 0.1
+  },
+  "train_rows": 12698,
+  "test_rows": 3175,
+  "sklearn_version": "1.9.1"
+}
