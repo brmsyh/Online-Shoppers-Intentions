@@ -1,9 +1,9 @@
 """
-Generate the RAW (messy) session export for the fictional client.
+Generate the RAW (messy) session export used in this project.
 
 Scenario
 --------
-"Casa & Estilo" (fictional name) is a mid-sized Brazilian online retailer
+The client (name withheld) is a mid-sized Brazilian online retailer
 selling fashion and home goods, headquartered in Sao Paulo. Their analytics
 team exported one row per website session for Oct-2025 .. Sep-2026.
 
@@ -14,7 +14,7 @@ labels, mixed date formats, missing values, duplicates, bot traffic, negative
 durations) so the cleaning step is a real exercise.
 
 Usage:  python src/generate_raw_data.py
-Output: data/raw/casa_estilo_sessions_raw.csv
+Output: data/raw/sessions_raw.csv
 """
 from pathlib import Path
 
@@ -24,7 +24,7 @@ import pandas as pd
 SEED = 2026
 N_SESSIONS = 15_873          # deliberately not a round number
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "data" / "raw" / "casa_estilo_sessions_raw.csv"
+OUT = ROOT / "data" / "raw" / "sessions_raw.csv"
 
 rng = np.random.default_rng(SEED)
 

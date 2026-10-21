@@ -1,6 +1,6 @@
 """
-Casa & Estilo — Purchase Intent Predictor (Streamlit)
-Fictional Brazilian e-commerce client · synthetic data · portfolio project
+Purchase Intent Predictor (Streamlit)
+Brazilian e-commerce client (name withheld) · synthetic data
 
 Run locally:  streamlit run app.py
 """
@@ -14,7 +14,7 @@ from src.predict import feature_list, load_model, predict_df
 ROOT = Path(__file__).parent
 IMG = ROOT / "images"
 
-st.set_page_config(page_title="Purchase Intent · Casa & Estilo", page_icon="🛒", layout="wide")
+st.set_page_config(page_title="Purchase Intent · Brazilian E-commerce", page_icon="🛒", layout="wide")
 
 
 @st.cache_resource
@@ -33,13 +33,13 @@ cats = meta["categories"]
 
 page = st.sidebar.radio("Navigation", ["Overview", "Explore the data", "Predict a session", "Score a CSV file"])
 st.sidebar.markdown("---")
-st.sidebar.caption("Fictional client · synthetic data · built as a data science portfolio project.")
+st.sidebar.caption("Client name withheld · synthetic data.")
 
 # ------------------------------------------------------------------ overview
 if page == "Overview":
     st.title("🛒 Will this visitor buy?")
     st.markdown(
-        "**Client (fictional):** *Casa & Estilo*, a mid-sized Brazilian online retailer of fashion and home goods "
+        "**Client:** a mid-sized Brazilian online retailer of fashion and home goods (name withheld), "
         "based in São Paulo.  \n**Problem:** traffic keeps growing but only ~1 in 6 sessions converts. "
         "Marketing wants to know **which live sessions are likely to buy**, so they can spend coupons and "
         "WhatsApp follow-ups only where they make a difference."
